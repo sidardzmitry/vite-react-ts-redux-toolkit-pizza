@@ -7,7 +7,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProfile, userActions } from "../../store/userSlice";
 import { useEffect } from "react";
 import { LogOut, Menu, ShoppingCart } from "lucide-react";
-import { Switcher } from "../../components/Switcher";
 
 export const Layout = () => {
   const navigate = useNavigate();
