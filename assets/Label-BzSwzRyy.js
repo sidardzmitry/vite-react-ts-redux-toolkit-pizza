@@ -1,0 +1,1 @@
+import{j as n}from"./index-CDZWrgAU.js";const l="_input_1ntke_1",e={input:l},u=({className:s,isValid:t=!0,...a})=>n.jsx("input",{autoComplete:"off",className:`${e.input} ${t?e.invalid:""}`,...a}),p=({children:s,...t})=>n.jsx("label",{className:"label",...t,children:s});export{u as I,p as L};
