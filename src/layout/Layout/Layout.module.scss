@@ -1,0 +1,112 @@
+@import "../../styles/variables";
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  .sidebar {
+    padding: 30px;
+    border-right: 1px solid $--separator-color;
+    display: flex;
+    flex-direction: column;
+  }
+  .user {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 46px;
+    gap: 16px;
+    img {
+      width: 90px;
+    }
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    &__name {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27.24px;
+    }
+    &__mail {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19px;
+      color: var(--text-secondary);
+    }
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    &__link {
+      position: relative;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      transition: color 0.3s;
+      &:hover {
+        color: $--primary-color;
+      }
+    }
+    .active {
+      color: $--primary-color;
+    }
+  }
+  .exit {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+  }
+  .content {
+    padding: 60px 24px 0px 24px;
+    width: 100%;
+    position: relative;
+  }
+  .count {
+    position: absolute;
+    top: -8px;
+    left: 65px;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    background-color: $--primary-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $--white-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    .sidebar {
+      padding: 60px 24px 30px 24px;
+      justify-content: space-between;
+      border-right: none;
+    }
+    .user {
+      margin-bottom: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .menu {
+      flex-direction: row;
+      gap: 16px;
+      margin-top: 24px;
+      justify-content: center;
+    }
+    .exit {
+      margin-top: 24px;
+      margin-left: auto;
+      width: 100%;
+    }
+    .content {
+      padding: 30px 24px;
+    }
+  }
+}

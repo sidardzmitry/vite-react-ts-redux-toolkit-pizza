@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+
+.login__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 325px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    input {
+      &::placeholder {
+        color: #c4c4c4;
+      }
+    }
+  }
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  &__text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--text-secondary);
+  }
+  &__btn {
+    color: $--primary-color;
+    transition: color 0.3s;
+    &:hover {
+      color: $--primary-hover-color;
+    }
+  }
+}
+.error {
+  color: $--primary-color;
+  font-size: 16px;
+  font-weight: 500;
+}

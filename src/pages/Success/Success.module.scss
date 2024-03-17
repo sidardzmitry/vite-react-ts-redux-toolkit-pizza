@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+.success {
+    max-width: 325px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  &__img {
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 37px;
+    text-align: center;
+  }
+  &__btn {
+  }
+}

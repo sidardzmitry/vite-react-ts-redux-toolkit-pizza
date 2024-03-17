@@ -1,0 +1,10 @@
+.headling {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+}
+@media(max-width: 991px) {
+  .headling{
+    font-size: 24px;
+  }
+}

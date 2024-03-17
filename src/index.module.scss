@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&display=swap);
+
+@import './styles/variables';
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body[data-theme='dark']{
+  --bg-color: #20232a;
+  --bg-color-card: #161618;
+  --text-primary: #ffffff;
+  --text-secondary: #afafb7;
+  --box-shadow: rgba(245, 245, 245, 0.2) 0px 0px 8px;
+  --box-shadow-hover: rgba(245, 245, 245, 0.653) 0px 0px 8px;
+}
+body[data-theme='light']{
+  --bg-color: #ffffff;
+  --bg-color-card: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: #5B5B5E;
+  --box-shadow: 0 1px 4px rgba(0,0,0,.1);
+  --box-shadow-hover: 0px 5px 20px 0px rgba(18,25,38,.1);
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: $--font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--bg-color);
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+input,
+button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+button,
+input[type="submit"] {
+  background: none;
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: $--primary-color;
+  font-size: 16px;
+  font-weight: 500;
+}
+.loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

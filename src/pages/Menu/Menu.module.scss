@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.card__list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    padding: 24px 0;
+}
+.error{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $--primary-color;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media(max-width: 1355px) {
+    .card__list  {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+}
+@media(max-width: 1025px) {
+    .card__list  {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+}

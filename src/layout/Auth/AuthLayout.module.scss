@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.auth{
+    display: flex;
+    min-height: 100vh;
+    padding: 20px 0;
+    position: relative;
+    &__logo{
+        flex: 1;
+        border-right: 1px solid $--separator-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media(max-width: 850px) {
+        &__logo {
+            position: absolute;
+            width: 100%;
+            border-right: none;
+            left: 50%;
+            top: 0;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+}

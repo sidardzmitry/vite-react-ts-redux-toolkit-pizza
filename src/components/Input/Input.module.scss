@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.input {
+    padding: 16px;
+    border: 1px solid $--separator-color;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-primary);
+    box-shadow: var(--box-shadow);
+    background-color: var(--bg-color-card);
+}
